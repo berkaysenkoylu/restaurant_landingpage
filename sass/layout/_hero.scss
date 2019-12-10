@@ -1,0 +1,144 @@
+.hero-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    &__background-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip: rect(0, auto, auto, 0);
+    }
+
+    &__background {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        // z-index: -100;
+        background-image: linear-gradient(to bottom, rgba(#000, 0.4), rgba(#000, 0.05)), url(../../img/hero_image.jpeg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(1.1);
+        animation: heroImgZoomOut 0.6s ease-out;
+        animation-fill-mode: forwards;
+        backface-visibility: hidden;
+    }
+
+    &__header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 10rem;
+        background-color: $color-white;
+        transform-origin: left;
+        transform: translate(-50%, -50%) scaleX(1);
+        animation: swipeFromLeft 0.4s forwards;
+
+        &--heading {
+            display: inline-block;
+            padding: 0 2rem;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 6rem;
+            text-shadow: -0.5rem 0.5rem 0.25rem rgba(#000, 0.2);
+            transform-origin: left;
+            transform: scaleX(0);
+            animation: swipeHeader 0.6s ease-out 0.4s;
+            animation-fill-mode: forwards;
+            min-width: 61rem; // I may remove this later
+        }
+    }
+
+    &__button-container {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__button {
+        position: relative;
+
+        &:link,
+        &:visited {
+            font-size: 2.5rem;
+            font-weight: 500;
+            padding: 1.5rem 3rem;
+            color: $color-white;
+            background-color: $color-primary;
+            text-decoration: none;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        &:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+
+        &:nth-child(1) {
+            animation: fadeIn 0.4s ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        &:nth-child(2) {
+            animation: fadeIn 0.4s ease-out 0.2s;
+            animation-fill-mode: forwards;
+        }
+
+        &:nth-child(3) {
+            animation: fadeIn 0.4s ease-out 0.4s;
+            animation-fill-mode: forwards;
+        }
+
+        &:nth-child(4) {
+            animation: fadeIn 0.4s ease-out 0.6s;
+            animation-fill-mode: forwards;
+        }
+
+        &:nth-child(5) {
+            animation: fadeIn 0.4s ease-out 0.8s;
+            animation-fill-mode: forwards;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: $color-black;
+            height: 5px;
+            width: 0;
+            z-index: -100;
+            transform-origin: 50% 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.25s ease-out, height 0.2s ease-out 0.25s;
+        }
+
+        &:hover::before {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.city-section-2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.testimonials-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.form-section {
+    width: 100%;
+    height: 100vh;
+}

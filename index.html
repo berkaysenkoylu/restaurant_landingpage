@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EWT | Eat Without Table</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/ewt.png">
+</head>
+<body>
+    <header class="header">
+        <div class="u-wrapper" id="wrapper">
+            <div class="header__toolbar">
+                <div class="header__logo">
+                    <img src="./img/ewt.png" alt="restaurant_logo" class="header__logo--img">
+                    <h2 class="header__logo--text" id="header_logo_text">Ewt</h2>
+                </div>
+                <div class="header__middle">
+                    <a href="#" class="header__middle--link">Menu</a>
+                    <a href="#" class="header__middle--link">Locations</a>
+                    <a href="#" class="header__middle--link">Story</a>
+                    <a href="#" class="header__middle--link">Bookings</a>
+                    <a href="#" class="header__middle--link">Careers</a>
+                </div>
+                <div class="header__right" id="header-right">
+                    <a href="#" class="header__right--link">
+                        <svg class="header__right--link--icon">
+                            <use xlink:href="./img/sprite.svg#icon-lock"></use>
+                        </svg>
+                        Ewt to Go
+                    </a>
+                    <a href="#" class="header__right--link">
+                        <svg class="header__right--link--icon">
+                            <use xlink:href="./img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        Find
+                    </a>
+                    
+                    <input type="checkbox" class="header__right--burger-checkbox" id="burger-toggle" onclick="onBurgermenuToggled()">
+
+                    <label for="burger-toggle" class="header__right--burger-menu">
+                        <span class="header__right--burger-menu__icon">&nbsp;</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation__popup" id="navigation-popup">
+            <div class="navigation__video">
+                <video class="navigation__video-footage" autoplay muted loop>
+                    <source src="./img/video.mp4" type="video/mp4">
+                    Your browser is not supported :(
+                </video>
+                <div class="navigation__video-overlay"></div>
+            </div>
+
+            <div class="navigation__menu">
+                <nav class="navigation__menu--items">
+                    <ul class="navigation__menu--links">
+                        <li class="navigation__menu--item">
+                            <a href="#" class="navigation__menu--item--link">Menu</a>
+                        </li>
+                        <li class="navigation__menu--item">
+                            <a href="#" class="navigation__menu--item--link">Locations</a>
+                        </li>
+                        <li class="navigation__menu--item">
+                            <a href="#" class="navigation__menu--item--link">Story</a>
+                        </li>
+                        <li class="navigation__menu--item">
+                            <a href="#" class="navigation__menu--item--link">Ewt to Go</a>
+                        </li>
+                        <li class="navigation__menu--item">
+                            <a href="#" class="navigation__menu--item--link">Bookings</a>
+                        </li>
+                        <li class="navigation__menu--item">
+                            <a href="#" class="navigation__menu--item--link">Careers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="navigation__menu--social">
+                    <ul class="navigation__menu--social-links">
+                        <li>
+                            <a href="#" class="navigation__menu--social-link">
+                                <svg class="navigation__menu--social-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="navigation__menu--social-link">
+                                <svg class="navigation__menu--social-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="navigation__menu--social-link">
+                                <svg class="navigation__menu--social-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="navigation__menu--social-link">
+                                <svg class="navigation__menu--social-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navigation__menu--social-copyright">
+                        <p>&copy; 2019 Berkay Senkoylu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="background">
+            <div class="background__overlay" id="overlay"></div>
+            <div class="background__image" id="image"></div>
+        </div>
+
+        <div class="foreground" id="foreground">
+            <section class="hero-section">
+                <div class="hero-section__background-wrapper">
+                    <div class="hero-section__background"></div>
+                </div>
+                <header class="hero-section__header">
+                    <h1 class="hero-section__header--heading">Turkish street food</h1>
+                </header>
+                
+                <div class="hero-section__button-container">
+                    <a href="#" class="hero-section__button">Menu</a>
+                    <a href="#" class="hero-section__button">Social</a>
+                    <a href="#" class="hero-section__button">Nutrition</a>
+                    <a href="#" class="hero-section__button">Students</a>
+                    <a href="#" class="hero-section__button">Ramadan</a>
+                </div>
+            </section>
+
+            <section class="city-section">
+                <div class="city-section__info">
+                    <h2 class="heading-primary u-margin-bottom-small">ANKARA</h2>
+
+                    <h2 class="heading-secondary u-margin-bottom-medium">We're open!</h2>
+
+                    <div class="city-section__info--content">
+                        <p class="paragraph">
+                            We are now open on Ataturk Boulevard, steps away from Kizilay Metro Access.
+                        </p>
+
+                        <div class="city-section__info--cta u-margin-top-medium ">
+                            <a href="#" class="btn">
+                                More info <span>&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="city-section__visual">
+                    <div class="city-section__image-container">
+                        <div class="city-section__image-container-image_wrapper">&nbsp;</div>
+                        <img src="./img/people_eating.jpeg" alt="city-1-image" class="city-section__image-container-img">
+                        <p class="city-section__image-container-text">Open Buffet</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="city-section">
+                    <div class="city-section__visual">
+                        <div class="city-section__image-container">
+                            <div class="city-section__image-container-image_wrapper">&nbsp;</div>
+                            <img src="./img/table_top.jpeg" alt="city-2-image" class="city-section__image-container-img">
+                            <p class="city-section__image-container-text">Wide selection</p>
+                        </div>
+                    </div>
+
+                <div class="city-section__info">
+                    <h2 class="heading-primary u-margin-bottom-small">Now open!</h2>
+
+                    <h2 class="heading-secondary u-margin-bottom-medium">Antalya</h2>
+
+                    <div class="city-section__info--content">
+                        <p class="paragraph">
+                            Come have a dinner with us to take a break from hellish temperatures of Antalya!
+                        </p>
+
+                        <div class="city-section__info--cta u-margin-top-medium ">
+                            <a href="#" class="btn">
+                                More info <span>&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials-section">TESTIMONIAL SECTION</section>
+
+            <section class="form-section">Form SECTION</section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        FOOTER
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
