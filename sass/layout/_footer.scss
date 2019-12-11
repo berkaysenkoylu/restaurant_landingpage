@@ -1,0 +1,182 @@
+.footer {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, $color-primary, $color-primary-dark);
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+
+        @media only screen and (max-width: $bp-xsmall) {
+            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        }
+
+        & > * {
+            height: 100%;
+
+            @media only screen and (max-width: $bp-xsmall) {
+                height: unset;
+            }
+        }
+
+        &__wrapper {
+            margin-left: 2rem;
+            flex: 1 0 auto;
+
+            @media only screen and (max-width: $bp-xsmall) {
+                margin: 0;
+            }
+
+            p {
+                @media only screen and (max-width: $bp-xsmall) {
+                    text-align: center;
+                }
+            }
+        }
+
+        &--title {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        &--subscription {
+            padding: 2rem;
+            display: flex;
+
+            @media only screen and (max-width: $bp-xsmall) {
+                flex-direction: column;
+            }
+
+            &-image {
+                @media only screen and (max-width: $bp-xsmall) {
+                    width: 50%;
+                    height: 50%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        &--form {
+            display: flex;
+            align-items: center;
+
+            @media only screen and (max-width: $bp-xsmall) {
+                flex-direction: column;
+            }
+
+            & > *:not(:last-child) {
+                margin-right: 1rem;
+
+                @media only screen and (max-width: $bp-xsmall) {
+                    margin: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            &__input {
+                all: unset;
+                font-size: 1.6rem;
+                padding: 1rem 1.5rem;
+                width: 70%;
+                background-color: $color-white;
+                border-bottom: 3px solid transparent;
+                border-radius: 3px;
+                transition: all 0.3s ease-out;
+
+                &:focus {
+                    border-bottom-color: $color-secondary-dark;
+                }
+            }
+
+            &__button {
+                all: unset;
+                cursor: pointer;
+                padding: 1rem 2rem;
+                font-size: 1.6rem;
+                font-weight: 500;
+                background-color: $color-black;
+                color: $color-white;
+                transition: all 0.3s ease-out;
+
+                &:hover {
+                    background-color: $color-white;
+                    color: $color-black;
+                }
+            }
+        }
+
+        &--social {
+            padding: 2rem;
+
+            &-links {
+                list-style: none;
+        
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+        
+                & > * {
+                    &:not(:last-child) {
+                        margin-right: 3rem;
+                    }
+                }
+            }
+
+            &-link {
+                transition: all 0.3s;
+                &:link,
+                &:visited {
+                    display: inline-block;
+                    background-color: $color-white;
+                    text-decoration: none;
+                    border-radius: 50%;
+                    width: 8rem;
+                    height: 8rem;
+
+                    @media only screen and (max-width: $bp-xsmall) {
+                        width: 6rem;
+                        height: 6rem;
+                    }
+                }
+            }
+
+            &-icon {
+                width: 4rem;
+                height: 4rem;
+                transform: translate(2rem, 2rem);
+                fill: $color-black;
+                transition: all 0.3s;
+
+                @media only screen and (max-width: $bp-xsmall) {
+                    width: 3rem;
+                    height: 3rem;
+                    transform: translate(1.5rem, 1.5rem);
+                }
+            }
+
+            &-link:hover {
+                background-color: $color-black;
+            }
+        
+            &-link:hover &-icon {
+                fill: $color-white;
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 2rem;
+        border-top: 2px solid rgba($color-black, 0.25);
+        &--text {
+            color: $color-white;
+            font-size: 1.6rem;
+            span {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}

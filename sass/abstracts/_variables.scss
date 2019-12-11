@@ -16,8 +16,16 @@ $color-secondary-dark: #26a300;
 $color-tertiary: #fffb0a;
 $color-tertiary-light: #f1ef50;
 
-//
+$color-suplementary: #006cd1;
+
 $color-white: #fff;
 $color-black: #000;
 
 $color-gray-dark: #818181;
+
+// BREAKPOINTS
+$bp-largest: 75em; // 1200px / 16px = 75em
+$bp-large: 62.5em; // 1000px / 16px = 62.5em
+$bp-medium: 50em; // 800px / 16px = 50em
+$bp-small: 37.5em; // 600px / 16px = 37.5em
+$bp-xsmall: 28.125em; // 450px / 16px = 28.125em

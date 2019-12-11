@@ -198,11 +198,11 @@
             </section>
 
             <section class="testimonials-section">
-                <h2 class="testimonials-section__heading">
-                    We make people content
+                <h2 class="testimonials-section__heading u-margin-bottom-large">
+                    We make people happy
                 </h2>
                 <div class="testimonials-section__reviews u-margin-top-large">
-                    <div class="card">
+                    <div class="card card-1 u-margin-bottom-large">
                         <figure class="card__shape">
                             <img src="./img/woman1.jpeg" alt="woman at a table" class="card__image">
                             <figcaption class="card__caption">
@@ -210,19 +210,134 @@
                             </figcaption>
                         </figure>
                         <div class="card__text">
-                            TEXT
+                            <h2>One of the best dinners I have ever had!</h2>
+                            <p class="u-margin-top-small">
+                                My friends and I went one of EWT's last weekend, and the service they provided was amazing!
+                                Food was heavenly delicious, the staff was very friendly and they made us feel like we were
+                                home!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card card-2">
+                        <figure class="card__shape">
+                            <img src="./img/woman2.jpeg" alt="woman at a table" class="card__image">
+                            <figcaption class="card__caption">
+                                Lily Teller
+                            </figcaption>
+                        </figure>
+                        <div class="card__text">
+                            <h2>Awesome service!</h2>
+                            <p class="u-margin-top-small">
+                                I hosted an anniversary party for my parents here. The food, the pricing, the service... were 
+                                top notch! We were extremely pleased with the staff in particular. 
+                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="testimonials-section__cta u-margin-top-medium">
+                    <a href="#" class="btn-text">
+                        Read more <span>&rarr;</span>
+                    </a>
+                </div>
             </section>
 
+            <section class="booking-section">
+                <div class="booking">
+                    <div class="booking__form">
+                        <div class="u-margin-bottom-large u-margin-top-large">
+                            <h2 class="heading-tertiary u-center-text">Start booking now</h2>
+                        </div>
+                        <form action="#" class="form">
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
 
-            <section class="form-section">Form SECTION</section>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Small group
+                                    </label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Large group
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__group form__button u-margin-top-medium">
+                                <button class="form__button--submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
     <footer class="footer">
-        FOOTER
+        <div class="footer__content">
+            <div class="footer__content--subscription">
+                <img src="./img/newspaper.png" alt="" class="footer__content--subscription-image">
+                <div class="footer__content__wrapper">
+                    <h2 class="footer__content--title">Subscribe!</h2>
+                    <p class="paragraph u-margin-top-small">Subscribe to learn deals and offers!</p>
+                    <form action="#" class="footer__content--form u-margin-top-small">
+                        <input type="email" class="footer__content--form__input" placeholder="Email address" id="email" required>
+                        <button class="footer__content--form__button">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__content--social">
+                <h2 class="footer__content--title">Follow us!</h2>
+                <ul class="footer__content--social-links">
+                    <li>
+                        <a href="#" class="footer__content--social-link">
+                            <svg class="footer__content--social-icon">
+                                <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__content--social-link">
+                            <svg class="footer__content--social-icon">
+                                <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__content--social-link">
+                            <svg class="footer__content--social-icon">
+                                <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__content--social-link">
+                            <svg class="footer__content--social-icon">
+                                <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright u-center-text">
+            <p class="footer__copyright--text">
+                <span>&copy;</span> 2019 Berkay Senkoylu
+            </p>
+        </div>
     </footer>
     <script src="./js/main.js"></script>
 </body>
