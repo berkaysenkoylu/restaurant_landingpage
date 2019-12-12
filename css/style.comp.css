@@ -915,7 +915,7 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.05)), url(../../img/hero_image.jpeg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.05)), url(../img/hero_image.jpeg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1068,7 +1068,7 @@ body {
     opacity: 0; }
   .background__image {
     height: 100%;
-    background-image: linear-gradient(to bottom right, rgba(146, 0, 33, 0.35), rgba(146, 0, 33, 0.25)), url(../img/img1.jpeg);
+    background-image: linear-gradient(to bottom right, rgba(146, 0, 33, 0.35), rgba(146, 0, 33, 0.25)), url(./img/img1.jpeg);
     background-position: top;
     background-size: cover;
     transition: all 0.2s; }

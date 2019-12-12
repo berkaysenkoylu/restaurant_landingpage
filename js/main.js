@@ -122,7 +122,7 @@ const changeBackground = () => {
     backgroundOverlay.classList.remove('background__overlay--fadeOut');
     setTimeout(() => {
         backgroundOverlay.classList.add('background__overlay--fadeOut');
-        backgroundImage.style.backgroundImage = `linear-gradient(to bottom right, rgba(146, 0, 33, 0.25), rgba(146, 0, 33, 0.15)), url(../img/img${imageIndex}.jpeg)`;
+        backgroundImage.style.backgroundImage = `linear-gradient(to bottom right, rgba(146, 0, 33, 0.25), rgba(146, 0, 33, 0.15)), url(./img/img${imageIndex}.jpeg)`;
     }, 300);
     
 

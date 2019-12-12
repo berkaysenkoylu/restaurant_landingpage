@@ -48,7 +48,7 @@ body {
 
     &__image {
         height: 100%;
-        background-image: linear-gradient(to bottom right, rgba($color-primary-dark, 0.35), rgba($color-primary-dark, 0.25)), url(../img/img1.jpeg);
+        background-image: linear-gradient(to bottom right, rgba($color-primary-dark, 0.35), rgba($color-primary-dark, 0.25)), url(./img/img1.jpeg);
         background-position: top;
         background-size: cover;
         transition: all 0.2s;
