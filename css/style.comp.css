@@ -1069,7 +1069,7 @@ body {
     opacity: 0; }
   .background__image {
     height: 100%;
-    background-image: linear-gradient(to bottom right, rgba(146, 0, 33, 0.35), rgba(146, 0, 33, 0.25)), url(./img/img1.jpeg);
+    background-image: linear-gradient(to bottom right, rgba(146, 0, 33, 0.35), rgba(146, 0, 33, 0.25)), url(../img/img1.jpeg);
     background-position: top;
     background-size: cover;
     transition: all 0.2s; }
