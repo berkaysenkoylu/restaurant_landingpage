@@ -34,7 +34,7 @@
         }
 
         &--title {
-            font-family: 'Permanent Marker', cursive;
+            font-family: $fancy-font;
             font-size: 4rem;
             letter-spacing: 2px;
             text-align: center;
@@ -76,7 +76,7 @@
 
             &__input {
                 all: unset;
-                font-size: 1.6rem;
+                font-size: $default-fontsize;
                 padding: 1rem 1.5rem;
                 width: 70%;
                 background-color: $color-white;
@@ -93,7 +93,7 @@
                 all: unset;
                 cursor: pointer;
                 padding: 1rem 2rem;
-                font-size: 1.6rem;
+                font-size: $default-fontsize;
                 font-weight: 500;
                 background-color: $color-black;
                 color: $color-white;
@@ -173,7 +173,7 @@
         border-top: 2px solid rgba($color-black, 0.25);
         &--text {
             color: $color-white;
-            font-size: 1.6rem;
+            font-size: $default-fontsize;
             span {
                 font-size: 2.2rem;
             }

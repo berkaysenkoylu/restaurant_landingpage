@@ -377,7 +377,7 @@
         &-copyright {
             & > p {
                 color: $color-white;
-                font-size: 1.6rem;
+                font-size: $default-fontsize;
                 font-weight: 400;
             }
         }
