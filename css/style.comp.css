@@ -940,15 +940,16 @@ body {
         height: unset; } }
     .hero-section__header--heading {
       display: inline-block;
-      padding: 0 2rem;
+      padding: 0 1rem;
       font-family: "Permanent Marker", cursive;
-      font-size: 6rem;
+      font-size: 5.8rem;
       text-shadow: -0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.2);
       transform-origin: left;
       transform: scaleX(0);
       animation: swipeHeader 0.6s ease-out 0.4s;
       animation-fill-mode: forwards;
-      min-width: 61rem; }
+      min-width: 61rem;
+      text-align: center; }
       @media only screen and (max-width: 75em) {
         .hero-section__header--heading {
           font-size: 5.5rem; } }
