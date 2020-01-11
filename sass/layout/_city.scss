@@ -5,14 +5,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    @media only screen and (max-width: $bp-small) {
-        height: unset;
-
-        grid-template-columns: repeat(auto-fit, minmax(37.5rem, 80%));
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: unset;
+        grid-template-rows: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
 
-        padding: 3rem;
+        padding: 2rem;
     }
 
     &__info {
@@ -34,10 +33,11 @@
     }
 
     &__visual {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         height: 100%;
+        position: relative;
     }
 
     &__image-container {
@@ -45,9 +45,12 @@
         height: 70%;
         padding: 3rem;
         background-color: $color-white;
-        border: 3px solid $color-primary;
+        border: 4px solid $color-primary;
 
-        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         &-image_wrapper {
             box-sizing: border-box;
@@ -59,10 +62,14 @@
             border: 3rem solid $color-white;
             z-index: 10;
             pointer-events: none;
+
+            @media only screen and (max-width: $bp-medium) {
+                border: none;
+            }
         }
 
         &-img {
-            width: 100%;
+            
             height: 100%;
             z-index: 1;
             transform: scale(1.05);
@@ -71,6 +78,10 @@
             &:hover {
                 transform: scale(1);
                 filter: blur(4px);
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 100%;
             }
         }
 
@@ -88,6 +99,10 @@
             transform: translate(-50%, -50%) scale(0);
             z-index: 10;
             transition: all 0.2s ease-out;
+
+            @media only screen and (max-width: $bp-xsmall) {
+                font-size: 2.5rem;
+            }
         }
 
         &-img:hover ~ &-text {
